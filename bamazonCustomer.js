@@ -51,7 +51,7 @@ function purchase() {
       }
     ])
     .then(function(answer) {
-          // query the database for all items being auctioned
+          // query the database for all items
       connection.query("SELECT * FROM products", function(err, res) {
         if (err) throw err;
       var chosenItem;
@@ -61,7 +61,7 @@ function purchase() {
         }
       }
       if (chosenItem.stock_quantity >= parseInt(answer.quantity)) {
-        // bid was high enough, so update db, let the user know, and start over
+        // updates stock quantity after purchase
         connection.query(
           "UPDATE products SET ? WHERE ?",
           [
