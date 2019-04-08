@@ -5,6 +5,6 @@ Command line node app in which user sends requests to purchase items. Inventory 
 ## Installation
 Enter "npm install" in command line to download packages 
 
-## DEMO VIDEO
+## Demo Video
 
 https://drive.google.com/file/d/1-n1MeqB5vx4whx3Js9orHdALFv3SRbo5/view?usp=sharing
